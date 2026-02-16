@@ -1,0 +1,680 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		999C1A222F38FB2B00CE5440 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 999C1A212F38FB2B00CE5440 /* Alamofire */; };
+		999C1A282F38FC0500CE5440 /* FactoryKit in Frameworks */ = {isa = PBXBuildFile; productRef = 999C1A272F38FC0500CE5440 /* FactoryKit */; };
+		999C1A322F3900BB00CE5440 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 999C1A312F3900BB00CE5440 /* Realm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9919F0C22F33C789005AEE78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9919F0AC2F33C786005AEE78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9919F0B32F33C786005AEE78;
+			remoteInfo = MediMinder;
+		};
+		9919F0CC2F33C789005AEE78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9919F0AC2F33C786005AEE78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9919F0B32F33C786005AEE78;
+			remoteInfo = MediMinder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9919F0B42F33C786005AEE78 /* MediMinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediMinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9919F0C12F33C789005AEE78 /* MediMinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediMinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9919F0CB2F33C789005AEE78 /* MediMinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediMinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		9919F0B62F33C786005AEE78 /* MediMinder */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MediMinder;
+			sourceTree = "<group>";
+		};
+		9919F0C42F33C789005AEE78 /* MediMinderTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MediMinderTests;
+			sourceTree = "<group>";
+		};
+		9919F0CE2F33C789005AEE78 /* MediMinderUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MediMinderUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9919F0B12F33C786005AEE78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				999C1A322F3900BB00CE5440 /* Realm in Frameworks */,
+				999C1A282F38FC0500CE5440 /* FactoryKit in Frameworks */,
+				999C1A222F38FB2B00CE5440 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9919F0BE2F33C789005AEE78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9919F0C82F33C789005AEE78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9919F0AB2F33C786005AEE78 = {
+			isa = PBXGroup;
+			children = (
+				9919F0B62F33C786005AEE78 /* MediMinder */,
+				9919F0C42F33C789005AEE78 /* MediMinderTests */,
+				9919F0CE2F33C789005AEE78 /* MediMinderUITests */,
+				9919F0B52F33C786005AEE78 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9919F0B52F33C786005AEE78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9919F0B42F33C786005AEE78 /* MediMinder.app */,
+				9919F0C12F33C789005AEE78 /* MediMinderTests.xctest */,
+				9919F0CB2F33C789005AEE78 /* MediMinderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9919F0B32F33C786005AEE78 /* MediMinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9919F0D52F33C789005AEE78 /* Build configuration list for PBXNativeTarget "MediMinder" */;
+			buildPhases = (
+				9919F0B02F33C786005AEE78 /* Sources */,
+				9919F0B12F33C786005AEE78 /* Frameworks */,
+				9919F0B22F33C786005AEE78 /* Resources */,
+				999C1A332F39018800CE5440 /* SwiftLint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				999C1A2F2F38FFFA00CE5440 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9919F0B62F33C786005AEE78 /* MediMinder */,
+			);
+			name = MediMinder;
+			packageProductDependencies = (
+				999C1A212F38FB2B00CE5440 /* Alamofire */,
+				999C1A272F38FC0500CE5440 /* FactoryKit */,
+				999C1A312F3900BB00CE5440 /* Realm */,
+			);
+			productName = MediMinder;
+			productReference = 9919F0B42F33C786005AEE78 /* MediMinder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9919F0C02F33C789005AEE78 /* MediMinderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9919F0D82F33C789005AEE78 /* Build configuration list for PBXNativeTarget "MediMinderTests" */;
+			buildPhases = (
+				9919F0BD2F33C789005AEE78 /* Sources */,
+				9919F0BE2F33C789005AEE78 /* Frameworks */,
+				9919F0BF2F33C789005AEE78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9919F0C32F33C789005AEE78 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9919F0C42F33C789005AEE78 /* MediMinderTests */,
+			);
+			name = MediMinderTests;
+			packageProductDependencies = (
+			);
+			productName = MediMinderTests;
+			productReference = 9919F0C12F33C789005AEE78 /* MediMinderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9919F0CA2F33C789005AEE78 /* MediMinderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9919F0DB2F33C789005AEE78 /* Build configuration list for PBXNativeTarget "MediMinderUITests" */;
+			buildPhases = (
+				9919F0C72F33C789005AEE78 /* Sources */,
+				9919F0C82F33C789005AEE78 /* Frameworks */,
+				9919F0C92F33C789005AEE78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9919F0CD2F33C789005AEE78 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9919F0CE2F33C789005AEE78 /* MediMinderUITests */,
+			);
+			name = MediMinderUITests;
+			packageProductDependencies = (
+			);
+			productName = MediMinderUITests;
+			productReference = 9919F0CB2F33C789005AEE78 /* MediMinderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9919F0AC2F33C786005AEE78 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2620;
+				LastUpgradeCheck = 2620;
+				TargetAttributes = {
+					9919F0B32F33C786005AEE78 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					9919F0C02F33C789005AEE78 = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = 9919F0B32F33C786005AEE78;
+					};
+					9919F0CA2F33C789005AEE78 = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = 9919F0B32F33C786005AEE78;
+					};
+				};
+			};
+			buildConfigurationList = 9919F0AF2F33C786005AEE78 /* Build configuration list for PBXProject "MediMinder" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9919F0AB2F33C786005AEE78;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				999C1A202F38FB2B00CE5440 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				999C1A262F38FC0500CE5440 /* XCRemoteSwiftPackageReference "Factory" */,
+				999C1A2D2F38FF4300CE5440 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */,
+				999C1A302F3900BB00CE5440 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 9919F0B52F33C786005AEE78 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9919F0B32F33C786005AEE78 /* MediMinder */,
+				9919F0C02F33C789005AEE78 /* MediMinderTests */,
+				9919F0CA2F33C789005AEE78 /* MediMinderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9919F0B22F33C786005AEE78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9919F0BF2F33C789005AEE78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9919F0C92F33C789005AEE78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		999C1A332F39018800CE5440 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH = \"$PATH:/opt/homebrew/bin\"\n\nif which swiftlint > /dev/null; then\n    swiftlint\nelse\n    echo \"warning: Swiftlint not installed\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9919F0B02F33C786005AEE78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9919F0BD2F33C789005AEE78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9919F0C72F33C789005AEE78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9919F0C32F33C789005AEE78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9919F0B32F33C786005AEE78 /* MediMinder */;
+			targetProxy = 9919F0C22F33C789005AEE78 /* PBXContainerItemProxy */;
+		};
+		9919F0CD2F33C789005AEE78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9919F0B32F33C786005AEE78 /* MediMinder */;
+			targetProxy = 9919F0CC2F33C789005AEE78 /* PBXContainerItemProxy */;
+		};
+		999C1A2F2F38FFFA00CE5440 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 999C1A2E2F38FFFA00CE5440 /* SwiftLintBuildToolPlugin */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9919F0D32F33C789005AEE78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9919F0D42F33C789005AEE78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9919F0D62F33C789005AEE78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F532MR4DXA;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.medicalReminder.MediMinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9919F0D72F33C789005AEE78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F532MR4DXA;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.medicalReminder.MediMinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9919F0D92F33C789005AEE78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.medicalReminder.MediMinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MediMinder.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MediMinder";
+			};
+			name = Debug;
+		};
+		9919F0DA2F33C789005AEE78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.medicalReminder.MediMinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MediMinder.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MediMinder";
+			};
+			name = Release;
+		};
+		9919F0DC2F33C789005AEE78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.medicalReminder.MediMinderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MediMinder;
+			};
+			name = Debug;
+		};
+		9919F0DD2F33C789005AEE78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.medicalReminder.MediMinderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MediMinder;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9919F0AF2F33C786005AEE78 /* Build configuration list for PBXProject "MediMinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9919F0D32F33C789005AEE78 /* Debug */,
+				9919F0D42F33C789005AEE78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9919F0D52F33C789005AEE78 /* Build configuration list for PBXNativeTarget "MediMinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9919F0D62F33C789005AEE78 /* Debug */,
+				9919F0D72F33C789005AEE78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9919F0D82F33C789005AEE78 /* Build configuration list for PBXNativeTarget "MediMinderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9919F0D92F33C789005AEE78 /* Debug */,
+				9919F0DA2F33C789005AEE78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9919F0DB2F33C789005AEE78 /* Build configuration list for PBXNativeTarget "MediMinderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9919F0DC2F33C789005AEE78 /* Debug */,
+				9919F0DD2F33C789005AEE78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		999C1A202F38FB2B00CE5440 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.11.1;
+			};
+		};
+		999C1A262F38FC0500CE5440 /* XCRemoteSwiftPackageReference "Factory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Factory";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.3;
+			};
+		};
+		999C1A2D2F38FF4300CE5440 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SimplyDanny/SwiftLintPlugins";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.63.2;
+			};
+		};
+		999C1A302F3900BB00CE5440 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		999C1A212F38FB2B00CE5440 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 999C1A202F38FB2B00CE5440 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		999C1A272F38FC0500CE5440 /* FactoryKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 999C1A262F38FC0500CE5440 /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = FactoryKit;
+		};
+		999C1A2E2F38FFFA00CE5440 /* SwiftLintBuildToolPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 999C1A2D2F38FF4300CE5440 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */;
+			productName = "plugin:SwiftLintBuildToolPlugin";
+		};
+		999C1A312F3900BB00CE5440 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 999C1A302F3900BB00CE5440 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 9919F0AC2F33C786005AEE78 /* Project object */;
+}
