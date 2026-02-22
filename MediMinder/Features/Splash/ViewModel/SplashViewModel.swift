@@ -13,10 +13,20 @@ import Observation
 final class SplashViewModel {
     private(set) var isActive = true
 
+    @ObservationIgnored
+    private var dismissTask: Task<Void, Never>?
+
     func startDismissTimer() {
-        Task {
+        dismissTask?.cancel()
+        dismissTask = Task {
             try? await Task.sleep(for: .seconds(AppConstants.Splash.displayDuration))
+            guard !Task.isCancelled else { return }
             isActive = false
         }
+    }
+
+    func cancelTimer() {
+        dismissTask?.cancel()
+        dismissTask = nil
     }
 }

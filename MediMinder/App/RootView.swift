@@ -6,13 +6,27 @@
 //
 
 import SwiftUI
+import FactoryKit
 
 struct RootView: View {
-    @State private var splashViewModel = SplashViewModel()
+    @Injected(\.appRouter) private var appRouter
+    @Injected(\.onboardingViewModel) private var onboardingViewModel
+    @Injected(\.splashViewModel) private var splashViewModel
 
     var body: some View {
         ZStack {
-            ContentView()
+            switch appRouter.currentState {
+            case .splash:
+                Color.clear
+
+            case .onboarding:
+                OnboardingView(viewModel: onboardingViewModel)
+                    .transition(.opacity)
+
+            case .content:
+                ContentView()
+                    .transition(.opacity)
+            }
 
             if splashViewModel.isActive {
                 SplashView()
@@ -20,8 +34,16 @@ struct RootView: View {
             }
         }
         .animation(.easeOut(duration: AppConstants.Splash.fadeOutDuration), value: splashViewModel.isActive)
+        .animation(.easeOut(duration: AppConstants.Splash.fadeOutDuration), value: appRouter.currentState)
         .onAppear {
             splashViewModel.startDismissTimer()
+        }
+        .onChange(of: splashViewModel.isActive) { _, isActive in
+            if !isActive {
+                appRouter.handleSplashCompleted(
+                    hasSeenOnboarding: onboardingViewModel.hasCompletedOnboarding
+                )
+            }
         }
     }
 }

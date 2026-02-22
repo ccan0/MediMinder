@@ -23,6 +23,7 @@ struct SplashView: View {
                 .containerRelativeFrame(.horizontal) { width, _ in
                     width * AppConstants.Splash.logoWidthRatio
                 }
+                .accessibilityLabel("MediMinder")
         }
     }
 }
