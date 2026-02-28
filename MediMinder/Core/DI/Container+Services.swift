@@ -39,4 +39,12 @@ extension Container {
     var onboardingViewModel: Factory<OnboardingViewModel> {
         self { @MainActor in OnboardingViewModel() }
     }
+
+    var homeViewModel: Factory<HomeViewModel> {
+        self { @MainActor in HomeViewModel() }
+    }
+
+    var dashboardViewModel: Factory<DashboardViewModel> {
+        self { @MainActor in DashboardViewModel() }
+    }
 }
