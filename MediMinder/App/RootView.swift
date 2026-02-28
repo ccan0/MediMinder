@@ -12,6 +12,7 @@ struct RootView: View {
     @Injected(\.appRouter) private var appRouter
     @Injected(\.onboardingViewModel) private var onboardingViewModel
     @Injected(\.splashViewModel) private var splashViewModel
+    @Injected(\.homeViewModel) private var homeViewModel
 
     var body: some View {
         ZStack {
@@ -23,8 +24,8 @@ struct RootView: View {
                 OnboardingView(viewModel: onboardingViewModel)
                     .transition(.opacity)
 
-            case .content:
-                ContentView()
+            case .home:
+                HomeView(viewModel: homeViewModel)
                     .transition(.opacity)
             }
 

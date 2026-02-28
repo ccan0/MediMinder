@@ -11,7 +11,7 @@ import Observation
 enum AppState: Equatable {
     case splash
     case onboarding
-    case content
+    case home
 }
 
 @MainActor
@@ -20,10 +20,10 @@ final class AppRouter {
     private(set) var currentState: AppState = .splash
 
     func handleSplashCompleted(hasSeenOnboarding: Bool) {
-        currentState = hasSeenOnboarding ? .content : .onboarding
+        currentState = hasSeenOnboarding ? .home : .onboarding
     }
 
     func handleOnboardingCompleted() {
-        currentState = .content
+        currentState = .home
     }
 }

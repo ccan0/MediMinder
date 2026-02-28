@@ -34,6 +34,23 @@ enum AppConstants {
         static let cornerRadius: CGFloat = 40
     }
 
+    enum Dashboard {
+        static let horizontalPadding: CGFloat = 17
+        static let sectionSpacing: CGFloat = 16
+        static let cardCornerRadius: CGFloat = 20
+        static let progressCardCornerRadius: CGFloat = 12
+        static let cardPadding: CGFloat = 16
+        static let iconSize: CGFloat = 48
+        static let circularProgressSize: CGFloat = 60
+        static let dayPickerTopCornerRadius: CGFloat = 20
+        static let dayCircleSize: CGFloat = 32
+        static let weekCircleSize: CGFloat = 26
+        static let fabSize: CGFloat = 56
+        static let fabIconSize: CGFloat = 24
+        static let medicationCardHeight: CGFloat = 89
+        static let takeNowCornerRadius: CGFloat = 21
+    }
+
     enum Language {
         static let preferredLanguageKey = "preferredLanguage"
     }
